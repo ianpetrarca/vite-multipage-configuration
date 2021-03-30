@@ -1,5 +1,5 @@
 # vite-multipage-configuration (vanilla js)
-First:
+Install dependencies:
 ```
 npm install
 ```
