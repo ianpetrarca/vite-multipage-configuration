@@ -1,13 +1,12 @@
 import path from "path";
+import glob from "glob";
+const htmlFiles = glob.sync(path.resolve(__dirname, "src", "*.html"));
 export default {
   root: path.join(__dirname, "src"),
   build: {
     outDir: path.join(__dirname, "dist"),
     rollupOptions: {
-      input: {
-        index: path.resolve(__dirname, "src/index.html"),
-        about: path.resolve(__dirname, "src/about.html"),
-      },
+      input: htmlFiles,
     },
   },
 };

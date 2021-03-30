@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --emptyOutDir",
     "serve": "vite preview"
   },
   "devDependencies": {
+    "glob": "^7.1.6",
     "vite": "^2.1.3"
   }
 }
